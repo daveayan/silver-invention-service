@@ -1,26 +1,23 @@
 (function() {
-    var express, router;
-
-    function init() {
-        express = require('express');
-        router = express.Router();
-    }
+    var logger = require('../common/Logger.js');
+    var express = require('express');
+    router = express.Router();
 
     function setupRoutes() {
+        logger.info("TeacherCrudController: Setting Up Routes");
         router.get('/:uuid', function (req, res, next) {
-            console.log('In TeacherCrudController :: get ' + req.params.uuid);
+            logger.info('TeacherCrudController: get ' + req.params.uuid);
             res.send('Hello ' + req.params.uuid);
-            res.sendStatus(200);
         });
         router.post('/:uuid', function (req, res, next) {
-            console.log('In TeacherCrudController :: post ' + req.params.uuid);
+            logger.info('TeacherCrudController: post ' + req.params.uuid);
         });
         router.delete('/:uuid', function (req, res, next) {
-            console.log('In TeacherCrudController :: delete ' + req.params.uuid);
+            logger.info('TeacherCrudController: delete ' + req.params.uuid);
         });
+        logger.info("TeacherCrudController: Done Setting Up Routes");
     }
 
-    init();
     setupRoutes();
     module.exports = router;
 })();

@@ -20,7 +20,6 @@
 - Artilerry
 - Cassandra / cloud provider
 - Neo4J / cloud provider
-- express
 - deploy to heroku
 - deploy to google cloud
 - circleci
