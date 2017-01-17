@@ -1,0 +1,10 @@
+{
+  "name": "silver-invention-service",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
+}
