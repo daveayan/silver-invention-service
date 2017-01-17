@@ -24,3 +24,4 @@
 - Swagger
 - pm2
 - Observables
+- External Configs
