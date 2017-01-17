@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "silver-invention-service",
+            "script": "server/app.js",
+            "watch": ["server"]
+        }
+    ]
+}
