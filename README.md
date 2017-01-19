@@ -11,11 +11,14 @@
 - Winston for logging
 - Typescript
 - Docker
+  - Run gulp first
   - docker build -t "silver-invention-service" .
   - docker run -p 5001:5001 -d -t "silver-invention-service"
   - docker stop $(docker ps -a -q)
   - docker rm $(docker ps -a -q)
   - docker rmi -f $(docker images -q)
+- Artilerry
+  - artillery run artillery.yml
 
 ## Needs
 
@@ -23,7 +26,6 @@
 - Kubernete
 - Cloudformation
 - Terraform
-- Artilerry
 - Cassandra / cloud provider
 - Neo4J / cloud provider
 - deploy to heroku
