@@ -1,5 +1,5 @@
 node_modules/
 typings/
 npm-debug.log
-server/**/*.js
+src/main/ts/**/*.js
 artillery*.json

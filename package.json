@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node server/application.js"
+    "start": "node src/main/ts/application.js"
   },
   "dependencies": {
     "@types/dateformat": "^1.0.1",
