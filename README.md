@@ -8,9 +8,9 @@
   - pm2 delete all
   - pm2 flush
 - Express, REST API endpoints
+- Winston for logging
 
 ## Needs
-- Logging
 - TS
 - TS Dependency Injection
 - Docker
