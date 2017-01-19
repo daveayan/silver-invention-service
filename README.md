@@ -9,10 +9,16 @@
   - pm2 flush
 - Express, REST API endpoints
 - Winston for logging
+- Typescript
+- Docker
+  - docker build -t "silver-invention-service" .
+  - docker run -p 5001:5001 -d -t "silver-invention-service"
+  - docker stop $(docker ps -a -q)
+  - docker rm $(docker ps -a -q)
+  - docker rmi -f $(docker images -q)
 
 ## Needs
-- TS
-- TS Dependency Injection
+
 - Docker
 - Kubernete
 - Cloudformation
@@ -26,5 +32,6 @@
 - travisci
 - unit testing with coverage
 - Swagger
+- TS Dependency Injection
 - Observables
 - External Configs

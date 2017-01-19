@@ -1,4 +1,4 @@
-import winston = require('Winston');
+import winston = require('winston');
 import {LoggerInstance} from 'winston';
 
 export class Logger {
