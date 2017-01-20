@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var tsc = require('gulp-typescript');
 var paths = {
     ts: [
-        'src/main/ts/**/*.ts'
+        'server/**/*.ts',
+        'spec/**/*.ts'
     ]
 };
 

@@ -13,11 +13,21 @@ export class TeacherController {
     }
 
     private get(req: Request, res: Response, next: NextFunction) {
-        this.logger.info("TeacherController:: Start get");
-        let testData = {
-            uuid: req.params.uuid
+        this.logger.info('TeacherController:: Start get');
+        let testData;
+
+        if(req.params.uuid === '12345') {
+            testData = {
+                uuid: req.params.uuid,
+                message: "Foo"
+            }
+        } else {
+            testData = {
+                uuid: req.params.uuid,
+                message: "Bar"
+            }
         }
         res.send(testData);
-        this.logger.info("TeacherController:: Done get");
+        this.logger.info('TeacherController:: Done get');
     }
 }

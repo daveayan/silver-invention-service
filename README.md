@@ -19,21 +19,25 @@
   - docker rmi -f $(docker images -q)
 - Artilerry
   - artillery run artillery.yml
+- Testing
+  - Jasmine  
+
 
 ## Needs
 
-- Docker
-- Kubernete
+- unit testing with coverage
+- circleci
+- External Configs
+- deploy to heroku
 - Cloudformation
+- Kubernete
 - Terraform
 - Cassandra / cloud provider
 - Neo4J / cloud provider
-- deploy to heroku
 - deploy to google cloud
-- circleci
-- travisci
-- unit testing with coverage
 - Swagger
 - TS Dependency Injection
 - Observables
-- External Configs
+- travisci
+
+Karma is installed only because @types/request needs it
