@@ -19,8 +19,9 @@
   - docker rmi -f $(docker images -q)
 - Artilerry
   - artillery run artillery.yml
-- Testing
-  - Jasmine  
+- Tests with Jasmine
+  - npm start
+  - npm test
 
 
 ## Needs
