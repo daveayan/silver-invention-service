@@ -1,4 +1,10 @@
 # silver-invention-service
+[![CircleCI](https://circleci.com/gh/daveayan/silver-invention-service.svg?style=svg)](https://circleci.com/gh/daveayan/silver-invention-service)
+[![Code Climate](https://codeclimate.com/github/daveayan/silver-invention-service/badges/gpa.svg)](https://codeclimate.com/github/daveayan/silver-invention-service)
+[![Test Coverage](https://codeclimate.com/github/daveayan/silver-invention-service/badges/coverage.svg)](https://codeclimate.com/github/daveayan/silver-invention-service/coverage)
+[![Issue Count](https://codeclimate.com/github/daveayan/silver-invention-service/badges/issue_count.svg)](https://codeclimate.com/github/daveayan/silver-invention-service)
+[![Dependency Status](https://gemnasium.com/badges/github.com/daveayan/silver-invention-service.svg)](https://gemnasium.com/github.com/daveayan/silver-invention-service)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 ## Tech Stack
 - pm2
@@ -23,11 +29,9 @@
   - npm start
   - npm test
 
-
-## Needs
+## Wish List / To do
 
 - unit testing with coverage
-- circleci
 - External Configs
 - deploy to heroku
 - Cloudformation
@@ -41,4 +45,5 @@
 - Observables
 - travisci
 
-Karma is installed only because @types/request needs it
+## Notes
+- Karma is installed only because @types/request needs it

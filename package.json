@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "start": "node server/application.js",
-    "test": "istanbul cover jasmine"
+    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "test-with-coverage": "istanbul cover jasmine"
   },
   "dependencies": {
     "@types/dateformat": "^1.0.1",
