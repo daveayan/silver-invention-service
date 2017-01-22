@@ -10,6 +10,3 @@ test:
     - gulp && npm run-script cover-start:
         background: true
     - sleep 5
-  post:
-    - npm stop
-    - codeclimate-test-reporter < coverage/coverage.lcov

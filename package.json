@@ -7,7 +7,8 @@
     "start": "node server/application.js",
     "cover-start": "istanbul cover server/application.js --handle-sigint",
     "stop": "kill -2 $(ps | grep '[i]stanbul cover server/application' | awk '{print $1}')",
-    "test": "./node_modules/jasmine/bin/jasmine.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "remap-cover-ts": "./node_modules/.bin/remap-istanbul -i coverage/coverage.json -o coverage/coverage-ts.json -o coverage/ts-lcov-report -t html"
   },
   "dependencies": {
     "@types/dateformat": "^1.0.1",

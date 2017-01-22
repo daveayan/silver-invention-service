@@ -25,13 +25,14 @@
   - docker rmi -f $(docker images -q)
 - Artilerry
   - artillery run artillery.yml
-- Tests with Jasmine
-  - npm start
-  - npm test
+- Integration tests with Jasmine and Istanbul
+  - $ npm run-script cover-start
+  - $ npm test
+  - $ npm stop
+  - $ npm remap-cover-ts
 
 ## Wish List / To do
 
-- unit testing with coverage
 - External Configs
 - deploy to heroku
 - Cloudformation
