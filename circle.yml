@@ -1,9 +1,15 @@
 --- 
+dependencies: 
+  pre: 
+    - "npm install codeclimate-test-reporter -g"
 machine: 
   node: 
     version: "6.9.4"
 test: 
   pre:
-    - gulp && npm start:
+    - gulp && npm run-script cover-start:
         background: true
     - sleep 5
+  post:
+    - npm stop
+    - codeclimate-test-reporter < coverage/coverage.lcov

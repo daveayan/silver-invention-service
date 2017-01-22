@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
-        "module":"umd",
+        "module":"commonjs",
         "sourceMap": true
-        //"noEmitOnError": true
     },
     "exclude": [
         "node_modules/",

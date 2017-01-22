@@ -1,5 +1,9 @@
 var gulp = require('gulp');
 var tsc = require('gulp-typescript');
+var sourcemaps = require('gulp-sourcemaps');
+
+var tsProject = tsc.createProject('tsconfig.json');
+
 var paths = {
     ts: [
         'server/**/*.ts',
@@ -7,10 +11,12 @@ var paths = {
     ]
 };
 
-gulp.task('build', function() { 
-    return gulp.src(paths.ts, { base: '.'})
-        .pipe(tsc('./tsconfig.json'))
-        .pipe(gulp.dest('.'));
+gulp.task("ts-compile", function () {
+    tsProject.src()
+        .pipe(sourcemaps.init())
+        .pipe(tsProject()).js
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest("server/"));
 });
 
-gulp.task('default', ['build'])
+gulp.task('default', ['ts-compile']);

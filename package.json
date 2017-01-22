@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "start": "node server/application.js",
-    "test": "./node_modules/jasmine/bin/jasmine.js",
-    "test-with-coverage": "istanbul cover jasmine"
+    "cover-start": "istanbul cover server/application.js --handle-sigint",
+    "stop": "kill -2 $(ps | grep '[i]stanbul cover server/application' | awk '{print $1}')",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "dependencies": {
     "@types/dateformat": "^1.0.1",
@@ -21,7 +22,9 @@
     "@types/jasmine": "^2.5.41",
     "@types/request": "0.0.39",
     "curlrequest": "^1.0.1",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.4.0",
     "gulp-typescript": "^3.1.4",
     "jasmine": "^2.5.3",
     "karma": "^1.4.0",
@@ -29,6 +32,7 @@
     "karma-jasmine": "^1.1.0",
     "karma-remap-istanbul": "^0.4.0",
     "karma-typescript": "^2.1.6",
+    "remap-istanbul": "^0.8.4",
     "request": "^2.79.0",
     "typescript": "^2.1.5"
   }

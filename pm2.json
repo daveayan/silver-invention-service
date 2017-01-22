@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "silver-invention-service",
-            "script": "server/app.js",
+            "script": "server/application.js",
             "watch": ["server"]
         }
     ]
