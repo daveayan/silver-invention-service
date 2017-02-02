@@ -16,12 +16,12 @@ export class TeacherService {
         if(uuid === '12345') {
             testData = {
                 uuid: uuid,
-                message: "Fooooo"
+                message: "Foo"
             }
         } else {
             testData = {
                 uuid: uuid,
-                message: "Barrrr"
+                message: "Bar"
             }
         }
 
